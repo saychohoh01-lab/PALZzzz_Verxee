@@ -1,0 +1,27 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.palz.shell'
+    compileSdk 34
+
+    defaultConfig {
+        // Nilai di bawah ini dan isi assets/palz diganti otomatis oleh web PALZzz saat membuat APK.
+        applicationId 'com.palz.template'
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName '0.0.0-palztpl'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
