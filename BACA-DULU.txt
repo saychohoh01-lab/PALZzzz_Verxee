@@ -1,0 +1,17 @@
+TEMPLATE APK PALZzz (dibuat SEKALI SAJA)
+
+Template ini adalah "cangkang" aplikasi Android yang isinya (alamat web, nama, ikon, splash, file HTML)
+diganti otomatis oleh web PALZzz langsung di browser. Setelah template.apk ada, membuat APK tidak
+perlu GitHub lagi: tekan Buat APK, langsung jadi dan bisa diunduh.
+
+LANGKAH (satu kali):
+1. Buat akun GitHub gratis, buat repository baru (boleh Private).
+2. Unggah SEMUA isi folder ini (termasuk folder .github) ke repository itu.
+3. Buka tab Actions > Build Template APK, tunggu sekitar 3 sampai 6 menit sampai centang hijau.
+4. Unduh hasilnya (artifact "palz-template-apk"), ekstrak, dapat file template.apk.
+5. Pilih salah satu:
+   a. Taruh template.apk di folder web PALZzz (sejajar index.html) lalu deploy ulang ke Netlify. Semua pengunjung langsung bisa membuat APK.
+   b. Atau di web, menu Downloader > Web -> APK, tekan Buat Proyek APK lalu "Pasang template.apk". Tersimpan di browser itu saja.
+
+JANGAN ubah applicationId (com.palz.template), label aplikasi, nama paket Java (com.palz.shell), atau isi res/mipmap,
+karena web mencari dan mengganti bagian-bagian itu.
